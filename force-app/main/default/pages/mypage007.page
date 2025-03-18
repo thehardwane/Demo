@@ -1,0 +1,33 @@
+<apex:page standardController="Account" >
+    <apex:detail />
+  <!--
+    <apex:form >
+
+  <apex:pageblock title="Contact">
+
+        
+        <apex:pageBlockSection > 
+        <apex:inputField value="{!Contact.FirstName}" />
+
+        
+        
+        </apex:pageBlockSection>
+        <a id="liveagent_button_online_5730o000000c7SH" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5730o000000c7SH')">Chat with experts</a><div id="liveagent_button_offline_5730o000000c7SH" style="display: none;">Offline</div><script type="text/javascript">
+if (!window._laq) { window._laq = []; }
+window._laq.push(function(){liveagent.showWhenOnline('5730o000000c7SH', document.getElementById('liveagent_button_online_5730o000000c7SH'));
+liveagent.showWhenOffline('5730o000000c7SH', document.getElementById('liveagent_button_offline_5730o000000c7SH'));
+});</script> 
+<script type='text/javascript' src='https://c.la1-c2-ukb.salesforceliveagent.com/content/g/js/45.0/deployment.js'></script>
+<script type='text/javascript'>
+liveagent.init('https://d.la1-c2-ukb.salesforceliveagent.com/chat', '5720o000000c6bk', '00D0o000001QJaM');
+</script>
+        <apex:pageBlockButtons location="bottom">       
+        <apex:commandButton value="save"  action="{!save}"/> 
+        <apex:commandButton value="cancel"  action="{!cancel}"/>
+        </apex:pageBlockButtons> 
+        
+   </apex:pageblock>
+
+</apex:form>
+   -->
+</apex:page>

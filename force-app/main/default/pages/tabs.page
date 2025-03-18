@@ -1,0 +1,23 @@
+<apex:page standardController="Account">
+  <p id="s1"> Welcome</p>
+   <style>
+   .activetab{background-color:white ;color:green; background-image:none;
+   }
+   .inactivetab{background-color:orange ;color:blue; background-image:none;
+   }
+   #av1{background-color:orange ;color:blue; background-image:none; font-family:Helvetica;
+   
+   }
+   #s1{background-color:orange ;color:blue; background-image:none; font-family:Helvetica;
+   Font-size:30px;
+   }
+   </style>
+   <apex:tabPanel activeTabClass="activetab"  inactiveTabClass="inactivetab" selectedTab="tabdetails" id="tabid">
+   <apex:tab label="Related" id="av" switchType="client" > <apex:detail /> </apex:tab>
+   <apex:tab label="Detail" id="av1" switchType="client"> <apex:detail relatedList="false"/></apex:tab>
+   
+   
+    </apex:tabPanel>
+  
+   
+</apex:page>

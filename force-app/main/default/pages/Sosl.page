@@ -1,0 +1,17 @@
+<apex:page controller="Sample" >
+    <apex:form >
+        
+            <apex:pageBlock title="Pageblock Table">
+                <apex:pageBlockTable value="{!accList}" var="a">
+<apex:column value="{!a.name}"/>
+    <apex:column value="{!a.id}"/>  
+                    </apex:pageBlockTable>
+        
+       
+          
+    
+                 
+                </apex:pageBlock>
+           
+    </apex:form>
+</apex:page>

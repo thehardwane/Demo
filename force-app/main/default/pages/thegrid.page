@@ -1,0 +1,18 @@
+<apex:page >
+ 
+<apex:panelGrid columns="3" id="thegrid" border="5" bgcolor="red"  cellpadding="30" cellspacing="20">
+    <apex:outputText value="1" id="a1"></apex:outputText>
+        <apex:outputText value="1" id="a12"></apex:outputText>
+        <apex:outputText value="1" id="a2"></apex:outputText>
+        <apex:outputText value="1" id="a3"></apex:outputText>
+        <apex:outputText value="1" id="a4"></apex:outputText>
+        <apex:outputText value="1" id="a5"></apex:outputText> 
+    <apex:outputText value="1" id="a55"></apex:outputText>
+    <apex:panelGroup >
+        <apex:outputText value="1" id="a6"></apex:outputText>
+        <apex:outputText value="1" id="a7"></apex:outputText>
+        <apex:outputText value="1" id="a8"></apex:outputText>
+        </apex:panelGroup>
+    </apex:panelGrid>
+     
+</apex:page>

@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,lightning:availableForFlowActions" access="global" >
+	<aura:attribute name="type" type="string" default="success" />
+    <aura:attribute name="title" type="string" />
+    <aura:attribute name="message" type="string" />    
+    <aura:attribute name="key" type="string" default="" />
+    <aura:attribute name="mode" type="string" default="dismissable" />
+    <aura:attribute name="duration" type="string" default="10" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+
+	<!-- The marker for the flow. with a listener on the status change -->
+	<lightning:flow aura:id="flowData" onstatuschange="{!c.handleStatusChange}" />
+    <br/>
+</aura:component>

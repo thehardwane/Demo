@@ -1,0 +1,19 @@
+<apex:page docType="html-5.0" sidebar="true" showHeader="false" >
+    <apex:form >
+    <apex:pageBlock title="Fuck off"  >
+        <br/><br/>
+     <apex:pageBlockButtons location="top" >
+              <apex:pageMessage severity="info" strength="2" summary="hi how are you"></apex:pageMessage>
+                <apex:pageBlockSection title="fuck you"  >
+                    
+            <apex:commandButton value="hello"/>
+                    <br/>
+                    
+                    <apex:inputText label="hello"  />
+                      </apex:pageBlockSection>
+              </apex:pageBlockButtons>
+       
+        </apex:pageBlock>
+        
+        </apex:form>
+</apex:page>

@@ -1,0 +1,17 @@
+<aura:component >
+	
+    <aura:attribute name="FirstValue" type="Integer"/>
+    
+    <aura:attribute name="SecondValue" type="Integer" />
+      <aura:attribute name="Output" type="Integer" />
+    
+    <lightning:input type="number" value="{!v.FirstValue}" label="Enter first number" required="true"/>
+    
+    <lightning:input type="number" value="{!v.SecondValue}" label="Enter Second number" required="true"/>
+Output is:-{!v.Output}
+
+    <lightning:button value="c" label="Add" onclick="{!c.doAdd}" />
+     <lightning:button value="c1" label="Sub" onclick="{!c.doSub}" />
+     <lightning:button value="c2" label="Multiply" onclick="{!c.doMlt}" />
+     <lightning:button value="c3" label="Divison" onclick="{!c.doDiv}" />
+</aura:component>

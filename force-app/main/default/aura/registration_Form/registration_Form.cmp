@@ -1,0 +1,55 @@
+<aura:component >
+    <aura:attribute name="NameofStudent" type="String" default="" />
+    <aura:attribute name="submit" type="String" default="false"/>
+    <aura:attribute name="ParentsName" type="String" default="" />
+    <aura:attribute name="Course" type="String" default="" />
+    <aura:attribute name="MobileNumber" type="Double" default="" />
+    <aura:attribute name="Address" type="String" default="" />
+    <aura:attribute name="IAccept" type="Boolean" default='false' />
+    <aura:attribute name="hours" type="String[]" default="1 Hour,2 hours,3 Hour"></aura:attribute>
+    <br/>
+    <div>
+        <div class="slds-m-top--medium">    
+            <div class="slds-page-header">
+                <div class="slds-page-header__title">
+                    <div class="slds-align_absolute-center" >
+                        <div class="slds-text-heading--large">
+                            
+                            Registration Form
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mar">
+            <div class="slds-size--5-of-12">
+                <lightning:input label="Name Of Student" name="studentsname" value="{!v.NameofStudent}"></lightning:input>
+                <br/>
+                <lightning:input label="Parents Name" name="parentsname" value="{!v.ParentsName}"></lightning:input>
+                <br/>
+                <lightning:input label="Course" name="coursename" value="{!v.Course}"></lightning:input>
+                <br/>
+                <lightning:input type="tel" label="Mobile Number" name="contactnumber" value="{!v.MobileNumber}"></lightning:input>
+                <br/>
+                <lightning:input label="Address" name="address" value="{!v.Address}"></lightning:input>
+                <br/>
+                <lightning:select name="hour"  label="Select Hours">
+                    <!--<option label="1 Hour">1</option>
+       <option label="2 Hours">2</option>
+       <option label="3 Hours">3</option>
+-->
+                    <aura:iteration items="{!v.hours}" var="hrs" >
+                        <option text="{!hrs}" value="{!hrs}"></option>
+                        
+                    </aura:iteration>
+                </lightning:select>
+                <br/>
+                <lightning:input type="checkbox" label="Accept" name="Iaccept" value="{!v.IAccept}" checked="false"></lightning:input>
+                <br/>
+                <lightning:button label="Sumbit"  value="{!v.submit}" onclick="{!c.buttonclick}"></lightning:button>
+                
+            </div>
+        </div>
+    </div>
+    
+</aura:component>

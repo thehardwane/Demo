@@ -1,0 +1,23 @@
+<apex:page >
+<h1> HI </h1>
+<apex:form >
+<apex:pageBlock title="My detail page">
+<apex:pageBlockSection title="Section header">
+First  name :<apex:inputText / > 
+Last name  :<apex:inputText / > 
+<apex:outputText >First  name <apex:inputText / > </apex:outputText>
+<apex:pageBlockSectionItem >
+
+First  name :<apex:inputText / > 
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+<apex:pageBlockButtons location="bottom" >
+<apex:commandButton value="Save" />
+
+
+
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+
+</apex:page>

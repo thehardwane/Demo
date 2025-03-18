@@ -1,0 +1,43 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+                access="global" >
+    <aura:attribute name="abc" type="String" default=""/>
+    <aura:attribute name="InstitutionName" type="String" default=""/>
+    <aura:attribute name="CourseName" type="String" default=""/>
+    <aura:attribute name="Duration" type="Integer" default=""/>
+    <aura:attribute name="OverallScore" type="String[]" default="  ,Less than 35% , In between 35% and 65%, In between 65% and 80% ,
+                                                                 More than 80% "/>
+    <aura:attribute name="UserResponse" type="String" default=""/>
+    <aura:attribute name="FormHeading" type="String" default="Educational Details"/>
+    <aura:attribute name="EducationDetailInnerComp" type="List" />
+    <aura:attribute name="SequnceNO" type="Integer"/>
+    <aura:attribute name="indexNo" type="Integer"/>
+    
+    <br/> <br/>
+    <div class="slds-m-top_xx-small">
+        <div class="slds-page-header__row"> 
+            <div class="slds-align_absolute-center" style="height:5rem">
+                <div class="slds-text-heading--large">
+                    {!v.FormHeading} {!v.indexNo}
+                </div>
+            </div>    
+        </div>
+    </div>
+    
+    <div class="slds-align_absolute-center" >
+        <div class="slds-col slds-size_5-of-12 ">
+            <lightning:input label="Institution's Name" name="InstitutionName" value="{!v.InstitutionName}"/><br/>
+            <lightning:input label="CourseName's Name" name="CourseName" value="{!v.CourseName}"/><br/>
+            <lightning:input label="Course Duration (in Years)" name="Duration" value="{!v.Duration}"/><br/>
+            <lightning:select name="OverallMarks" label="Overall score in this course?" value="{!v.UserResponse}" >
+                <aura:iteration items="{!v.OverallScore}" var="score">
+                    
+                    <option value="{!score}" text="{!score}" ></option>
+                </aura:iteration>
+            </lightning:select><br/>
+            <lightning:button label="Submit" onclick="{!c.submit}" />
+            
+        </div>
+    </div>
+    
+    
+</aura:component>

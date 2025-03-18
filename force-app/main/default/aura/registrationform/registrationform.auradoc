@@ -1,0 +1,8 @@
+<aura:documentation>
+	<aura:description>
+    <b>Hi Everyone</b> 
+    </aura:description>
+	<aura:example name="registrationform" ref="c:registrationform" label="Registration Form">
+		Example Description
+	</aura:example>
+</aura:documentation>
